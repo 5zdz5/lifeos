@@ -3,6 +3,8 @@
 一个**轻量、本地化**的个人工作台：任务待办、习惯打卡、笔记日记、双向链接、日历、全年热力图、**知识库**、AI 助手，以及 **Codex 式编程 Agent**。像平板自带的备忘录 / 日历一样打开即用，数据 100% 存在本机，断网照常使用；**只在联网采集与 AI 调用时才联网**。
 
 **在线体验**：https://alifeosv3nov09.app.workbuddy.host/?sharecode=33O3OVO2Z3&v=c04360fc#dashboard
+
+**GitHub Pages（免 sharecode，公开演示）**：https://5zdz5.github.io/lifeos/
 > 整条使用：`?sharecode=...` 是访问凭据，删掉会打不开；`v=` 是版本戳，源码改动后自动变化，用于刷新浏览器/SW 缓存。扫码可用 `docs/lifeos-open-qr.png`。
 
 ## 装到设备（两条路径，都无需签名 / DevEco / 证书）
