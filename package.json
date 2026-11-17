@@ -1,0 +1,20 @@
+{
+  "name": "lifeos",
+  "version": "1.0.0",
+  "description": "LifeOS · 本地优先的个人系统 + Codex 式编程 Agent + 识海长期记忆",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron .",
+    "build": "node tools/build-css.js && node build-standalone.js",
+    "build:css": "node tools/build-css.js",
+    "verify": "node verify-release.js",
+    "test": "node tests/run.js",
+    "test:browser": "node tests/browser.test.js"
+  },
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^31.0.0"
+  }
+}

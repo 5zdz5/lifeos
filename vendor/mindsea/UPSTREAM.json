@@ -1,0 +1,8 @@
+{
+  "name": "识海 · MindSea",
+  "repository": "https://github.com/SQHLnb666/mindsea",
+  "commit": "169a30394c52bf379979db111c255e45f9643cc3",
+  "license": "MIT",
+  "integratedBy": "LifeOS",
+  "notes": "保留上游 query/write/capture/tail 核心；日志路径与助手称呼按 LifeOS 适配。"
+}

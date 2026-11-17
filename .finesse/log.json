@@ -1,0 +1,20 @@
+[
+  {
+    "at": "2026-11-10",
+    "target": "LifeOS /workspace/lifeos/src",
+    "register": "product",
+    "body": "workbench-desktop",
+    "layer": "ai-console (Codex)",
+    "dials": { "SOUL": 6, "SPECTACLE": 2, "DENSITY": 7 },
+    "axes": {
+      "A": "teal+clay-on-sage",
+      "B": "700/400",
+      "C": "sidebar-shell",
+      "D": "css-feedback",
+      "E": "tinted-paper"
+    },
+    "rejectedDefault": "near-black page + indigo glow + emoji icons + flat grey cards",
+    "source": "mouse-lin/finesse-skill v0.22.0 (MIT)",
+    "note": "首次改造；无历史构建可对照，下一轮需在此五轴上至少换 3 轴"
+  }
+]

@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="zh-CN" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <!-- /* finesse · register=product · A=teal+clay-on-sage · B=700/400 · C=sidebar-shell · D=css-feedback · E=tinted-paper · SOUL=6 SPECTACLE=2 DENSITY=7 */ -->
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LifeOS · 智能生活操作系统</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2064%2064'%3E%3Crect%20width='64'%20height='64'%20rx='14'%20fill='%23176c6b'/%3E%3Cpath%20d='M32%2013L47%2032L32%2051L17%2032Z'%20fill='%23f2f8f6'/%3E%3C/svg%3E" />
+  <meta name="theme-color" content="#0d1514" />
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="apple-touch-icon" href="assets/icon-192.png" />
+  <!-- 单一 CSS 来源：style.css + finesse.css 经 tools/build-css.js 确定性合并 -->
+  <link rel="stylesheet" href="css/app.css?v=c04360fc" />
+</head>
+<body>
+  <a class="skip-link" href="#view">跳到主内容</a>
+  <svg aria-hidden="true" focusable="false" style="position:absolute;width:0;height:0;overflow:hidden">
+    <symbol id="i-home" viewBox="0 0 24 24"><path d="M3 10.5 12 3l9 7.5V20a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1z"/></symbol>
+    <symbol id="i-task" viewBox="0 0 24 24"><path d="M4 5h16v14H4z"/><path d="m8 12 3 3 5-6"/></symbol>
+    <symbol id="i-habit" viewBox="0 0 24 24"><path d="M4 12a8 8 0 0 1 13-6l3 3M20 12a8 8 0 0 1-13 6l-3-3M17 3v3h-3M7 21v-3h3"/></symbol>
+    <symbol id="i-note" viewBox="0 0 24 24"><path d="M6 3h9l4 4v14H6z"/><path d="M14 3v5h5M9 12h7M9 16h7"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 4h6a3 3 0 0 1 3 3v13a3 3 0 0 0-3-3H4zM20 4h-3a3 3 0 0 0-3 3v13a3 3 0 0 1 3-3h3z"/></symbol>
+    <symbol id="i-cal" viewBox="0 0 24 24"><path d="M4 6h16v15H4zM8 3v4M16 3v4M4 10h16"/></symbol>
+    <symbol id="i-grid" viewBox="0 0 24 24"><path d="M4 4h6v6H4zM14 4h6v6h-6zM4 14h6v6H4zM14 14h6v6h-6z"/></symbol>
+    <symbol id="i-graph" viewBox="0 0 24 24"><circle cx="6" cy="5" r="2"/><circle cx="18" cy="5" r="2"/><circle cx="12" cy="19" r="2"/><path d="M7.5 7 11 17M16.5 7 13 17M8 5h8"/></symbol>
+    <symbol id="i-memory" viewBox="0 0 24 24"><path d="M12 3c4 0 7 1.3 7 3s-3 3-7 3-7-1.3-7-3 3-3 7-3zM5 6v6c0 1.7 3 3 7 3s7-1.3 7-3V6M5 12v6c0 1.7 3 3 7 3s7-1.3 7-3v-6"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24"><path d="m8 8-4 4 4 4M16 8l4 4-4 4M14 4l-4 16"/></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4zM8 9h8M8 12h5"/></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"/><path d="M12 3v2M12 19v2M3 12h2M19 12h2M5.6 5.6 7 7M17 17l1.4 1.4M18.4 5.6 17 7M7 17l-1.4 1.4"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24"><path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z"/></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16"/></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m15.5 15.5 5 5"/></symbol>
+  </svg>
+  <div id="app">
+    <aside class="sidebar">
+      <div class="brand"><span class="logo">◆</span><span class="brand-text">LifeOS</span></div>
+      <nav id="nav">
+        <div class="nav-group">日常</div>
+        <button data-view="dashboard" class="nav-item active"><svg class="ni"><use href="#i-home"/></svg><span class="nav-text">总览</span></button>
+        <button data-view="tasks" class="nav-item"><svg class="ni"><use href="#i-task"/></svg><span class="nav-text">任务待办</span></button>
+        <button data-view="habits" class="nav-item"><svg class="ni"><use href="#i-habit"/></svg><span class="nav-text">习惯打卡</span></button>
+        <button data-view="notes" class="nav-item"><svg class="ni"><use href="#i-note"/></svg><span class="nav-text">笔记日记</span></button>
+        <button data-view="calendar" class="nav-item"><svg class="ni"><use href="#i-cal"/></svg><span class="nav-text">日历</span></button>
+        <button data-view="heatmap" class="nav-item"><svg class="ni"><use href="#i-grid"/></svg><span class="nav-text">热力图</span></button>
+        <div class="nav-group">知识</div>
+        <button data-view="library" class="nav-item"><svg class="ni"><use href="#i-book"/></svg><span class="nav-text">知识库</span></button>
+        <button data-view="graph" class="nav-item"><svg class="ni"><use href="#i-graph"/></svg><span class="nav-text">知识图谱</span></button>
+        <button data-view="mindsea" class="nav-item"><svg class="ni"><use href="#i-memory"/></svg><span class="nav-text">识海记忆</span></button>
+        <div class="nav-group">Agent</div>
+        <button data-view="codex" class="nav-item"><svg class="ni"><use href="#i-code"/></svg><span class="nav-text">Codex</span></button>
+        <button data-view="ai" class="nav-item"><svg class="ni"><use href="#i-chat"/></svg><span class="nav-text">AI 助手</span></button>
+        <div class="nav-group">系统</div>
+        <button data-view="settings" class="nav-item"><svg class="ni"><use href="#i-settings"/></svg><span class="nav-text">设置</span></button>
+      </nav>
+      <div class="sidebar-foot">
+        <div id="ai-status" class="ai-status">AI：演示模式</div>
+        <div class="mode-badge" id="mode-badge">浏览器</div>
+      </div>
+    </aside>
+
+    <div id="nav-scrim" class="nav-scrim"></div>
+
+    <main class="main">
+      <header class="topbar">
+        <button id="nav-toggle" class="icon-btn nav-toggle" aria-label="打开菜单" title="菜单"><svg><use href="#i-menu"/></svg></button>
+        <div class="topbar-title" id="view-title">总览</div>
+        <div class="topbar-actions">
+          <button id="global-search" class="icon-btn" aria-label="全局检索" title="全局检索（Ctrl/⌘ + K）"><svg><use href="#i-search"/></svg></button>
+          <span class="demo-pill" id="demo-pill" title="网页版为本地演示模式，不接触本机文件">演示版 · 数据仅存本机</span>
+          <button id="theme-toggle" class="icon-btn" aria-label="切换主题" title="切换主题"><svg><use href="#i-sun"/></svg></button>
+        </div>
+      </header>
+      <section id="view" class="view"></section>
+    </main>
+  </div>
+
+  <script src="js/version.js?v=c04360fc"></script>
+  <script src="js/utils.js?v=c04360fc"></script>
+  <script src="js/storage.js?v=c04360fc"></script>
+  <script src="js/bridge.js?v=c04360fc"></script>
+  <script src="js/store.js?v=c04360fc"></script>
+  <script src="js/links.js?v=c04360fc"></script>
+  <script src="js/vault.js?v=c04360fc"></script>
+  <script src="js/search.js?v=c04360fc"></script>
+  <script src="js/stats.js?v=c04360fc"></script>
+  <script src="js/capture.js?v=c04360fc"></script>
+  <script src="js/seed-library.js?v=c04360fc"></script>
+  <script src="js/mindsea.js?v=c04360fc"></script>
+  <script src="js/modules/daily.js?v=c04360fc"></script>
+  <script src="js/modules/tasks.js?v=c04360fc"></script>
+  <script src="js/modules/habits.js?v=c04360fc"></script>
+  <script src="js/modules/notes.js?v=c04360fc"></script>
+  <script src="js/modules/library.js?v=c04360fc"></script>
+  <script src="js/modules/calendar.js?v=c04360fc"></script>
+  <script src="js/modules/heatmap.js?v=c04360fc"></script>
+  <script src="js/modules/graph.js?v=c04360fc"></script>
+  <script src="js/modules/mindsea.js?v=c04360fc"></script>
+  <script src="js/modules/codex.js?v=c04360fc"></script>
+  <script src="js/modules/ai.js?v=c04360fc"></script>
+  <script src="js/modules/settings.js?v=c04360fc"></script>
+  <script src="js/modules/search.js?v=c04360fc"></script>
+  <script src="js/app.js?v=c04360fc"></script>
+</body>
+</html>

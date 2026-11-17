@@ -1,0 +1,74 @@
+{
+  "seed_cannot_clear": {
+    "before": "17 条知识\n◇ AI 整理 14\n◎ 外部采集 3\n▣ 全部存于本机\n全部标签\n#GTD\n#专注\n",
+    "after": "17 条知识\n◇ AI 整理 14\n◎ 外部采集 3\n▣ 全部存于本机\n全部标签\n#GTD\n#专注\n",
+    "keys": [
+      "lifeos-data",
+      "lifeos-seeded",
+      "lifeos-snapshots"
+    ]
+  },
+  "modal_focus_enter_esc": {
+    "focus": {
+      "tag": "BUTTON",
+      "ph": "",
+      "inModal": false
+    },
+    "enter": {
+      "modalOpen": 1,
+      "text": "全部 0 | 待办 0 | 进行中 0 | 已完成 0 | + 新建任务 | 还没有任务，点击「新建任务」开始规划你的生活吧"
+    },
+    "escStillOpen": 1
+  },
+  "toast_duration": [
+    {
+      "at": 100,
+      "txt": "已创建任务"
+    },
+    {
+      "at": 1000,
+      "txt": "已创建任务"
+    },
+    {
+      "at": 2500,
+      "txt": null
+    },
+    {
+      "at": 4500,
+      "txt": null
+    },
+    {
+      "at": 7000,
+      "txt": null
+    }
+  ],
+  "delete_no_confirm": {
+    "delButtons": 1,
+    "before": true,
+    "after": true,
+    "confirmDialog": 1
+  },
+  "export_download": {
+    "download": {
+      "file": "lifeos-backup-20261111-1016.json"
+    },
+    "clear": {
+      "before": 3,
+      "after": 3,
+      "dialog": 1
+    }
+  },
+  "codex_demo": {
+    "inputCount": 1,
+    "txt": "跳到主内容 | ◇ | Codex | ← | ＋ | 新建任务 | 正在运行 · 0 | 当前没有运行中的任务 | 今天 · 1 | 帮我新建一个 hello.txt 并写上内容 | × | 任务在本机顺序执行，没有后台队列 | 工作区 | (浏览器演示工作区) | 任务与文件都在本机 | 帮我新建一个 hello.txt 并写上内容 | 4 步操作 · 10:16 | 工作区 | 帮我新建一个 hello.txt 并写上内容 | ◇ | 我先看看工作区里有什么文件。 | ⌗ | 浏览 . | 221ms | › | ◇ | 读一下 README 了解这个项目。 | ▤ | 读取 README.md | 221ms | › | ◇ | 生成一份摘要文件。 | ✎ | 写入 AGENT-SUMMARY.md | 222ms | › | 入参 | {\"path\":\"AGENT-SUMMARY.md\",\"content\":\"# 任务摘要\\n\\n目标：帮我新建一个 hello.txt 并写上内容\\n\\n> 由浏览器演示 Agent 生成。配置真实 API Key 后，Agent 会真实读写本机文件并执行命令。\\n\"} | 耗时 | 222ms | AGENT-SUMMARY.md | +6 | +# 任务摘要 | + | +目标：帮我新建一个 hello.txt 并写上内容 | + | +> 由浏览器演示 Agent 生成。配置真实 API Key 后，Agent 会真实读写本机文件并执行命令。 | + | ◇ | 演示模式完成：已查看工作区（4 个文件）并生成 AGENT-SUMMARY.md。配置真实 API Key 后，Agent 将真实读写本机文件、执行命令与 Python 代码。 | ◌ | 后台沉淀本轮原话 | — | › | 3 步 | 678ms 用时 | 浏览器演示 · 未"
+  },
+  "library_fetch": {
+    "modal": 1,
+    "text": "跳到主内容 | ◆ | LifeOS | 日常 | 总览 | 任务待办 | 习惯打卡 | 笔记日记 | 日历 | 热力图 | 知识 | 知识库 | 知识图谱 | 识海记忆 | Agent | Codex | AI 助手 | 系统 | 设置 | AI：演示模式 | 数据仅存本机 | 本地存储 | 知识库 | 17 条知识 | ◇ AI 整理 14 | ◎ 外部采集 3 | ▣ 全部存于本机 | 全部标签 | #GTD | #专注 | #习惯 | #任务管理 | #优先级 | #信息饮食 | #决策 | #分类 | #双向链接 | #复盘 | #外部摘录 | #学习 | #微习惯 | #效率 | #日程 | #时间管理 | #本地优先 | #理解 | #真实抓取 | #知识管理 | #行为设计 | #记忆 | #阅读 | #隐私 | ↻ 刷新源 | ＋ 联网采集 | GTD：五步把脑子清空 | ◇ | 把所有待办从大脑移到外部系统，按「捕获 → 理清 → "
+  },
+  "calendar_click_shot": {
+    "cells": 42,
+    "inputs": 0
+  },
+  "errors": []
+}

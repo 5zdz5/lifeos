@@ -1,0 +1,90 @@
+{
+  "mobile375": {
+    "nav": {
+      "sidebarDisplay": "flex",
+      "sidebarW": 60,
+      "navVisible": "flex",
+      "hamburger": false,
+      "firstNavVisible": [
+        {
+          "t": "总览",
+          "r": {
+            "x": 8,
+            "y": 66,
+            "width": 43,
+            "height": 44,
+            "top": 66,
+            "right": 51,
+            "bottom": 110,
+            "left": 8
+          }
+        },
+        {
+          "t": "任务待办",
+          "r": {
+            "x": 8,
+            "y": 112,
+            "width": 43,
+            "height": 44,
+            "top": 112,
+            "right": 51,
+            "bottom": 156,
+            "left": 8
+          }
+        },
+        {
+          "t": "习惯打卡",
+          "r": {
+            "x": 8,
+            "y": 158,
+            "width": 43,
+            "height": 44,
+            "top": 158,
+            "right": 51,
+            "bottom": 202,
+            "left": 8
+          }
+        }
+      ]
+    },
+    "clickErr": null,
+    "after": {
+      "title": "任务待办",
+      "overflow": false
+    },
+    "errs": []
+  },
+  "tablet768": {
+    "sidebarW": 60,
+    "overflow": false
+  },
+  "dark": {
+    "theme": "dark",
+    "ms": {
+      "parent": {
+        "overflow": "hidden",
+        "border": "1px solid",
+        "radius": "12px",
+        "h": 83.59375
+      },
+      "child": {
+        "h": 81.59375,
+        "radius": "18px",
+        "shadow": "rgba(0, 0, 0, 0.3) 0px 1px 3px 0px",
+        "borderRight": "1px"
+      }
+    }
+  },
+  "keyboard_and_misc": {
+    "ERROR": "TimeoutError: locator.click: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('.nav-item[data-view=\"settings\"]')\u001b[22m\n\u001b[2m    - locator resolved "
+  },
+  "multitab": {
+    "before": "全部 0\n待办 0\n进行中 0\n已完成 0\n+ 新建任务\n还没有任务，点击「新建任务」开始规划你的生活吧",
+    "p2WithoutReload": "全部 0\n待办 0\n进行中 0\n已完成 0\n+ 新建任务\n还没有任务，点击「新建任务」开始规划你的生活吧",
+    "p2AfterReload": "全部 1\n待办 1\n进行中 0\n已完成 0\n+ 新建任务\n进行中 · 1\n标签A新建\n中\n待办\n进行中\n已完成\n✎\n×"
+  },
+  "no_sharecode": {
+    "title": "链接不完整",
+    "body": "链接不完整 | 访问该应用需要完整的分享链接，当前地址缺少访问参数。 | 请向分享者索取完整的访问链接。 | 若链接是通过聊天工具转发的，可能已被截断；建议改用复制粘贴完整地址。 | 如果你是该应用的创建者，可在 WorkBuddy 的应用详情页重新复制分享链接。"
+  }
+}
